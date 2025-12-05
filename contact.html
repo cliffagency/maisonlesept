@@ -50,7 +50,29 @@
                     </div>
                     <div class="info-content">
                         <h3>Adresse</h3>
-                        <p>7 Rue de la Paix<br>75002 Paris, France</p>
+                        <p>PCWH+46M Oran, Algérie</p>
+                        <p>Notre établissement est situé au cœur d'Oran</p>
+                    </div>
+                </div>
+                
+                <!-- Google Maps Embed -->
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Localisation</h3>
+                        <div class="map-container" style="margin-top: 10px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102404.97335422278!2d-0.6606855!3d35.697292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e8a6cdf7b5d3f%3A0xc1f8b7e6b7c5b5e5!2sOran%2C%20Algeria!5e0!3m2!1sen!2sdz!4v1712345678901!5m2!1sen!2sdz" 
+                                width="100%" 
+                                height="200" 
+                                style="border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
                 
@@ -59,9 +81,10 @@
                         <i class="fas fa-phone"></i>
                     </div>
                     <div class="info-content">
-                        <h3>Téléphone</h3>
-                        <p>+33 (0)1 42 61 23 45</p>
-                        <p style="font-size: 0.9rem; color: #888; margin-top: 5px;">Du lundi au samedi, 10h-18h</p>
+                        <h3>Téléphones</h3>
+                        <p><strong>07.70.61.64.52</strong></p>
+                        <p><strong>06.60.96.16.22</strong></p>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 5px;">Du lundi au dimanche, 10h-23h</p>
                     </div>
                 </div>
                 
@@ -82,9 +105,9 @@
                     </div>
                     <div class="info-content">
                         <h3>Horaires</h3>
-                        <p><strong>Déjeuner:</strong> 12h - 14h30 (du mardi au samedi)</p>
-                        <p><strong>Dîner:</strong> 19h30 - 22h30 (du mardi au samedi)</p>
-                        <p><em>Fermé le dimanche et lundi</em></p>
+                        <p><strong>Déjeuner:</strong> 12h - 15h (tous les jours)</p>
+                        <p><strong>Dîner:</strong> 19h - 23h (tous les jours)</p>
+                        <p><em>Ouvert 7 jours sur 7</em></p>
                     </div>
                 </div>
                 
@@ -94,8 +117,8 @@
                     </div>
                     <div class="info-content">
                         <h3>Informations importantes</h3>
-                        <p>Tenue élégante requise. Les enfants de moins de 12 ans ne sont pas admis en salle le soir.</p>
-                        <p>Pour les annulations, merci de nous prévenir au moins 48 heures à l'avance.</p>
+                        <p>Réservation recommandée, surtout les week-ends et jours fériés.</p>
+                        <p>Pour les annulations, merci de nous prévenir au moins 24 heures à l'avance.</p>
                     </div>
                 </div>
             </div>
@@ -117,7 +140,7 @@
                     
                     <div class="form-group">
                         <label for="phone">Téléphone *</label>
-                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="Ex: 07.70.61.64.52">
                     </div>
                     
                     <div class="form-group">
@@ -133,11 +156,15 @@
                             <option value="12:30">12:30</option>
                             <option value="13:00">13:00</option>
                             <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="19:00">19:00</option>
                             <option value="19:30">19:30</option>
                             <option value="20:00">20:00</option>
                             <option value="20:30">20:30</option>
                             <option value="21:00">21:00</option>
                             <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
                         </select>
                     </div>
                     
@@ -161,7 +188,7 @@
                         <label for="menu">Type de menu</label>
                         <select id="menu" name="menu" class="form-control">
                             <option value="">À la carte</option>
-                            <option value="degustation">Menu Dégustation (185€/pers)</option>
+                            <option value="degustation">Menu Dégustation Spécial</option>
                             <option value="vegetarian">Menu Végétarien</option>
                         </select>
                     </div>
@@ -183,14 +210,15 @@
             <h2 class="text-gold">Suivez-nous sur Instagram</h2>
             <p>Découvrez nos dernières créations et les coulisses de Maison Le Sept</p>
             
-            <a href="https://instagram.com/maisonlesept" target="_blank" class="instagram-icon">
+            <a href="https://www.instagram.com/maisonlesept?igsh=MTNxb2xoNDB3NXUzYQ==" target="_blank" class="instagram-icon">
                 <i class="fab fa-instagram"></i>
             </a>
             
             <br>
-            <a href="https://instagram.com/maisonlesept" target="_blank" class="instagram-link">
+            <a href="https://www.instagram.com/maisonlesept?igsh=MTNxb2xoNDB3NXUzYQ==" target="_blank" class="instagram-link">
                 @maisonlesept
             </a>
+            <p style="margin-top: 15px; color: #b0b0b0;">Partagez vos moments chez nous avec le hashtag <strong>#MaisonLeSept</strong></p>
         </div>
     </section>
 
@@ -198,11 +226,11 @@
     <footer>
         <div class="container">
             <div class="social-icons">
-                <a href="https://instagram.com/maisonlesept" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/maisonlesept?igsh=MTNxb2xoNDB3NXUzYQ==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <p class="copyright">© 2023 Maison Le Sept. Tous droits réservés.</p>
+            <p class="copyright">© 2023 Maison Le Sept. PCWH+46M Oran, Algérie | 07.70.61.64.52 / 06.60.96.16.22</p>
         </div>
     </footer>
 
@@ -211,6 +239,12 @@
         document.addEventListener('DOMContentLoaded', function() {
             const today = new Date().toISOString().split('T')[0];
             document.getElementById('date').setAttribute('min', today);
+            
+            // Set maximum date to 3 months from now
+            const maxDate = new Date();
+            maxDate.setMonth(maxDate.getMonth() + 3);
+            const maxDateFormatted = maxDate.toISOString().split('T')[0];
+            document.getElementById('date').setAttribute('max', maxDateFormatted);
             
             // Form submission
             document.getElementById('reservationForm').addEventListener('submit', function(e) {
@@ -226,6 +260,13 @@
                 
                 if (!name || !email || !phone || !date || !time || !guests) {
                     alert('Veuillez remplir tous les champs obligatoires (*)');
+                    return;
+                }
+                
+                // Phone number validation (Algerian format)
+                const phoneRegex = /^(0[567]\.[0-9]{2}\.[0-9]{2}\.[0-9]{2}|0[567][0-9]{8})$/;
+                if (!phoneRegex.test(phone.replace(/\./g, ''))) {
+                    alert('Veuillez entrer un numéro de téléphone algérien valide (ex: 07.70.61.64.52)');
                     return;
                 }
                 
