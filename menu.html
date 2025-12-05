@@ -34,15 +34,19 @@
     <section class="menu-header">
         <div class="container">
             <h1 class="text-gold">Notre Menu</h1>
-            <p>Découvrez nos créations gastronomiques, où chaque plat est une œuvre d'art en 3D</p>
+            <p>Découvrez nos créations gastronomiques, où chaque plat est une œuvre d'art</p>
             <div class="divider"></div>
             
             <div class="menu-categories">
                 <button class="category-btn active" data-category="all">Tout voir</button>
-                <button class="category-btn" data-category="entrees">Entrées</button>
-                <button class="category-btn" data-category="plats">Plats Principaux</button>
+                <button class="category-btn" data-category="entrees-froides">Entrées Froides</button>
+                <button class="category-btn" data-category="entrees-chaudes">Entrées Chaudes</button>
+                <button class="category-btn" data-category="tartines">Tartines</button>
+                <button class="category-btn" data-category="pates">Pâtes</button>
+                <button class="category-btn" data-category="volailles">Volailles</button>
+                <button class="category-btn" data-category="viandes">Viandes</button>
+                <button class="category-btn" data-category="poissons">Poissons</button>
                 <button class="category-btn" data-category="desserts">Desserts</button>
-                <button class="category-btn" data-category="boissons">Boissons</button>
             </div>
         </div>
     </section>
@@ -50,17 +54,17 @@
     <!-- Menu Sections -->
     <section class="menu-sections">
         <div class="container">
-            <!-- Entrées Section -->
-            <div class="menu-section" data-category="entrees">
+            <!-- Entrées Froides Section -->
+            <div class="menu-section" data-category="entrees-froides">
                 <div class="section-header">
-                    <h2 class="section-title">Entrées</h2>
+                    <h2 class="section-title">Entrées Froides</h2>
                 </div>
                 
-                <div class="dish" data-dish="foie-gras">
+                <div class="dish" data-dish="salade-caprese">
                     <div class="dish-model">
                         <model-viewer
                             src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                            alt="Foie Gras de Canard"
+                            alt="Salade Caprèse"
                             camera-controls
                             auto-rotate
                             ar
@@ -69,19 +73,17 @@
                     </div>
                     <div class="dish-info">
                         <div class="dish-header">
-                            <h3 class="dish-name">Foie Gras de Canard</h3>
-                            <div class="dish-price">38€</div>
+                            <h3 class="dish-name">Salade Caprèse</h3>
+                            <div class="dish-price">800 DA</div>
                         </div>
-                        <p class="dish-desc">Foie gras de canard des Landes mi-cuit, gelée de Sauternes et pain d'épices toasté.</p>
-                        <p class="dish-ingredients">Foie gras de canard, Sauternes, pain d'épices, fleur de sel</p>
                     </div>
                 </div>
                 
-                <div class="dish" data-dish="langoustines">
+                <div class="dish" data-dish="salade-cesar">
                     <div class="dish-model">
                         <model-viewer
                             src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                            alt="Langoustines Royales"
+                            alt="Salade César"
                             camera-controls
                             auto-rotate
                             ar
@@ -90,26 +92,100 @@
                     </div>
                     <div class="dish-info">
                         <div class="dish-header">
-                            <h3 class="dish-name">Langoustines Royales</h3>
-                            <div class="dish-price">42€</div>
+                            <h3 class="dish-name">Salade César</h3>
+                            <div class="dish-price">1200 DA</div>
                         </div>
-                        <p class="dish-desc">Langoustines juste saisies, caviar Osciètre, émulsion légère au citron yuzu.</p>
-                        <p class="dish-ingredients">Langoustines, caviar Osciètre, citron yuzu, crème fraîche</p>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="burrata">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Burrata"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Burrata</h3>
+                            <div class="dish-price">1500 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="salade-poulpe">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Salade de Poulpe"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Salade de Poulpe</h3>
+                            <div class="dish-price">1600 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="carpaccio-boeuf">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Carpaccio de Bœuf"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Carpaccio de Bœuf</h3>
+                            <div class="dish-price">1800 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="salade-sept">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Salade Le Sept"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Salade Le Sept</h3>
+                            <div class="dish-price">1900 DA</div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Plats Principaux Section -->
-            <div class="menu-section" data-category="plats">
+            <!-- Entrées Chaudes Section -->
+            <div class="menu-section" data-category="entrees-chaudes">
                 <div class="section-header">
-                    <h2 class="section-title">Plats Principaux</h2>
+                    <h2 class="section-title">Entrées Chaudes</h2>
                 </div>
                 
-                <div class="dish" data-dish="bar-de-ligne">
+                <div class="dish" data-dish="champignons-ail">
                     <div class="dish-model">
                         <model-viewer
                             src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                            alt="Bar de Ligne"
+                            alt="Champignons Sautés à l'Ail"
                             camera-controls
                             auto-rotate
                             ar
@@ -118,19 +194,17 @@
                     </div>
                     <div class="dish-info">
                         <div class="dish-header">
-                            <h3 class="dish-name">Bar de Ligne Rôti</h3>
-                            <div class="dish-price">68€</div>
+                            <h3 class="dish-name">Champignons Sautés à l'Ail</h3>
+                            <div class="dish-price">800 DA</div>
                         </div>
-                        <p class="dish-desc">Bar de ligne rôti à la peau croustillante, artichauts poivrade et jus réduit au vin blanc.</p>
-                        <p class="dish-ingredients">Bar de ligne, artichauts, vin blanc, beurre monté</p>
                     </div>
                 </div>
                 
-                <div class="dish" data-dish="pigeon">
+                <div class="dish" data-dish="arancini-crevettes">
                     <div class="dish-model">
                         <model-viewer
                             src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                            alt="Pigeon de Bresse"
+                            alt="Arancini de Crevettes"
                             camera-controls
                             auto-rotate
                             ar
@@ -139,11 +213,538 @@
                     </div>
                     <div class="dish-info">
                         <div class="dish-header">
-                            <h3 class="dish-name">Pigeon de Bresse</h3>
-                            <div class="dish-price">74€</div>
+                            <h3 class="dish-name">Arancini de Crevettes</h3>
+                            <div class="dish-price">1200 DA</div>
                         </div>
-                        <p class="dish-desc">Pigeon de Bresse rôti, foie gras poêlé, chanterelles et jus au Porto vintage.</p>
-                        <p class="dish-ingredients">Pigeon de Bresse, foie gras, chanterelles, Porto vintage</p>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="poulpe-galicienne">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Poulpe à la Galicienne"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Poulpe à la Galicienne</h3>
+                            <div class="dish-price">1500 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="crevettes-ail">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Crevettes Sautées à l'Ail"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Crevettes Sautées à l'Ail</h3>
+                            <div class="dish-price">2000 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="crevettes-tempura">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Crevettes Tempura"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Crevettes Tempura</h3>
+                            <div class="dish-price">2200 DA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tartines Section -->
+            <div class="menu-section" data-category="tartines">
+                <div class="section-header">
+                    <h2 class="section-title">Tartines</h2>
+                </div>
+                
+                <div class="dish" data-dish="tartine-champignons">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Tartine Champignons"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Tartine Champignons</h3>
+                            <div class="dish-price">900 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="tartine-chevre-miel">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Tartine Chèvre Miel"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Tartine Chèvre Miel</h3>
+                            <div class="dish-price">1200 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="tartine-avocat-saumon">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Tartine Avocat-Saumon"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Tartine Avocat-Saumon</h3>
+                            <div class="dish-price">1800 DA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pâtes Section -->
+            <div class="menu-section" data-category="pates">
+                <div class="section-header">
+                    <h2 class="section-title">Pâtes</h2>
+                </div>
+                
+                <div class="dish" data-dish="penne-arrabiata">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Penne à l'Arrabiata"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Penne à l'Arrabiata</h3>
+                            <div class="dish-price">800 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="lasagne">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Lasagne"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Lasagne</h3>
+                            <div class="dish-price">1400 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="tagliatelles-poulet-champignons">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Tagliatelles Poulet Champignons"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Tagliatelles Poulet Champignons</h3>
+                            <div class="dish-price">1500 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="penne-4-fromages">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Penne 4 Fromages"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Penne 4 Fromages</h3>
+                            <div class="dish-price">1500 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="spaghetti-bolognaise">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Spaghetti Bolognaise"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Spaghetti Bolognaise</h3>
+                            <div class="dish-price">1600 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="linguine-crevettes">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Linguine aux Crevettes"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Linguine aux Crevettes</h3>
+                            <div class="dish-price">2200 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="tagliatelles-saumon">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Tagliatelles au Saumon"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Tagliatelles au Saumon</h3>
+                            <div class="dish-price">2400 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="spaghetti-fruits-mer">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Spaghetti aux Fruits de Mer"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Spaghetti aux Fruits de Mer</h3>
+                            <div class="dish-price">2800 DA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Volailles Section -->
+            <div class="menu-section" data-category="volailles">
+                <div class="section-header">
+                    <h2 class="section-title">Volailles</h2>
+                </div>
+                
+                <div class="dish" data-dish="gratin-poulet">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Gratin de Poulet"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Gratin de Poulet</h3>
+                            <div class="dish-price">1200 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="brochettes-poulet">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Brochettes de Poulet"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Brochettes de Poulet</h3>
+                            <div class="dish-price">1800 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="supreme-poulet-champignons">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Suprême de Poulet aux Champignons"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Suprême de Poulet aux Champignons</h3>
+                            <div class="dish-price">2000 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="paupiettes-poulet">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Paupiettes de Poulet"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Paupiettes de Poulet</h3>
+                            <div class="dish-price">2000 DA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Viandes Section -->
+            <div class="menu-section" data-category="viandes">
+                <div class="section-header">
+                    <h2 class="section-title">Viandes</h2>
+                </div>
+                
+                <div class="dish" data-dish="brochettes-viande">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Brochettes de Viande"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Brochettes de Viande</h3>
+                            <div class="dish-price">2400 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="entrecote">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Entrecôte"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Entrecôte</h3>
+                            <div class="dish-price">3000 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="cote-agneau">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Côte d'Agneau"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Côte d'Agneau</h3>
+                            <div class="dish-price">3200 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="filet">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Filet"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Filet</h3>
+                            <div class="dish-price">3400 DA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Poissons Section -->
+            <div class="menu-section" data-category="poissons">
+                <div class="section-header">
+                    <h2 class="section-title">Poissons</h2>
+                </div>
+                
+                <div class="dish" data-dish="gratin-fruits-mer">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Gratin Fruits de Mer"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Gratin Fruits de Mer</h3>
+                            <div class="dish-price">2200 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="dorade">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Dorade"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Dorade</h3>
+                            <div class="dish-price">2600 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="calamar">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Calamar"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Calamar</h3>
+                            <div class="dish-price">3000 DA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="pave-saumon">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Pavé de Saumon"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Pavé de Saumon</h3>
+                            <div class="dish-price">3400 DA</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,11 +755,11 @@
                     <h2 class="section-title">Desserts</h2>
                 </div>
                 
-                <div class="dish" data-dish="souffle">
+                <div class="dish" data-dish="creme-brulee">
                     <div class="dish-model">
                         <model-viewer
                             src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                            alt="Soufflé Grand Marnier"
+                            alt="Crème Brûlée"
                             camera-controls
                             auto-rotate
                             ar
@@ -167,19 +768,17 @@
                     </div>
                     <div class="dish-info">
                         <div class="dish-header">
-                            <h3 class="dish-name">Soufflé Grand Marnier</h3>
-                            <div class="dish-price">24€</div>
+                            <h3 class="dish-name">Crème Brûlée</h3>
+                            <div class="dish-price">800 DA</div>
                         </div>
-                        <p class="dish-desc">Soufflé onctueux parfumé au Grand Marnier, servi avec sa crème anglaise à la vanille de Tahiti.</p>
-                        <p class="dish-ingredients">Œufs, Grand Marnier, vanille de Tahiti, sucre</p>
                     </div>
                 </div>
                 
-                <div class="dish" data-dish="chocolat">
+                <div class="dish" data-dish="fondants-chocolat">
                     <div class="dish-model">
                         <model-viewer
                             src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                            alt="Délice Chocolat Guanaja"
+                            alt="Fondants au Chocolat"
                             camera-controls
                             auto-rotate
                             ar
@@ -188,73 +787,31 @@
                     </div>
                     <div class="dish-info">
                         <div class="dish-header">
-                            <h3 class="dish-name">Délice Chocolat Guanaja</h3>
-                            <div class="dish-price">26€</div>
+                            <h3 class="dish-name">Fondants au Chocolat</h3>
+                            <div class="dish-price">900 DA</div>
                         </div>
-                        <p class="dish-desc">Délice fondant au chocolat Guanaja 70%, sorbet passion et croustillant praliné.</p>
-                        <p class="dish-ingredients">Chocolat Guanaja, fruits de la passion, praliné, crème</p>
+                    </div>
+                </div>
+                
+                <div class="dish" data-dish="trompe-loeil">
+                    <div class="dish-model">
+                        <model-viewer
+                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                            alt="Trompe-l'œil"
+                            camera-controls
+                            auto-rotate
+                            ar
+                            environment-image="neutral">
+                        </model-viewer>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3 class="dish-name">Trompe-l'œil</h3>
+                            <div class="dish-price">1000 DA</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Boissons Section -->
-            <div class="menu-section" data-category="boissons">
-                <div class="section-header">
-                    <h2 class="section-title">Sélection de Vins</h2>
-                </div>
-                
-                <div class="dish" data-dish="bourgogne">
-                    <div class="dish-model">
-                        <model-viewer
-                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                            alt="Bourgogne Blanc"
-                            camera-controls
-                            auto-rotate
-                            ar
-                            environment-image="neutral">
-                        </model-viewer>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header">
-                            <h3 class="dish-name">Bourgogne Blanc 2019</h3>
-                            <div class="dish-price">85€</div>
-                        </div>
-                        <p class="dish-desc">Domaine Coche-Dury, Bourgogne Blanc. Notes de citron, noisette et minéralité prononcée.</p>
-                        <p class="dish-ingredients">Chardonnay</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="bordeaux">
-                    <div class="dish-model">
-                        <model-viewer
-                            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                            alt="Bordeaux Rouge"
-                            camera-controls
-                            auto-rotate
-                            ar
-                            environment-image="neutral">
-                        </model-viewer>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header">
-                            <h3 class="dish-name">Château Margaux 2015</h3>
-                            <div class="dish-price">420€</div>
-                        </div>
-                        <p class="dish-desc">Premier Grand Cru Classé. Élégance, complexité et longueur exceptionnelle.</p>
-                        <p class="dish-ingredients">Cabernet Sauvignon, Merlot, Cabernet Franc, Petit Verdot</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tasting Menu -->
-    <section class="tasting-menu">
-        <div class="container">
-            <h2 class="text-gold">Menu Dégustation</h2>
-            <p>Une expérience gastronomique complète en 7 services, incluant une sélection des plus grandes créations de notre chef.</p>
-            <p><strong>185€ par personne</strong> | <em>Accord mets-vins supplément: 95€</em></p>
-            <a href="contact.html" class="btn btn-gold" style="margin-top: 20px;">Réserver le menu dégustation</a>
         </div>
     </section>
 
