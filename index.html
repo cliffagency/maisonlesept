@@ -1,13 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Maison Le Sept</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Le Sept</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Page-specific styles for index.html */
+        .hero {
+            text-align: center;
+            padding: 80px 0 120px;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            line-height: 1.1;
+        }
+        
+        .hero h1 span {
+            font-style: italic;
+            color: #c9a96e;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: #d4d4d4;
+            font-weight: 300;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        /* About Section */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            padding: 100px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .about-img {
+            flex: 1;
+            height: 500px;
+            background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 2px;
+        }
+        
+        .about-content {
+            flex: 1;
+        }
+        
+        .about-content h2 {
+            margin-bottom: 30px;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 80px 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #c9a96e;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* Responsive styles for index.html */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 4rem;
+            }
+            
+            .about {
+                flex-direction: column;
+                gap: 50px;
+            }
+            
+            .about-img {
+                width: 100%;
+                height: 400px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .about-img {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
-<body style="background:black; text-align:center;">
-<a href="index.html"><img src="logo.png" alt="Logo" style="width:300px;"></a>
-<h1 style="color:white;">Bienvenue à Maison Le Sept</h1>
-<p style="color:white;">Découvrez notre univers.</p>
-<a href="menu.html" style="color:white;">Menu</a> | 
-<a href="contact.html" style="color:white;">Contact</a>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="logo.png" alt="Maison Le Sept" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact & Réservations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenue à <span>Maison Le Sept</span></h1>
+            <p>Un lieu d'exception où l'art culinaire rencontre l'élégance parisienne. Depuis 1927, nous créons des expériences gastronomiques inoubliables.</p>
+            <div class="divider"></div>
+            <div class="hero-btns">
+                <a href="menu.html" class="btn">Découvrir notre menu</a>
+                <a href="contact.html" class="btn btn-gold">Réserver une table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container" style="display: flex; align-items: center; gap: 80px;">
+            <div class="about-img"></div>
+            <div class="about-content">
+                <h2 class="text-gold">Notre Histoire</h2>
+                <p>Fondée en 1927 par le chef étoilé Julien Le Sept, notre maison incarne l'excellence de la cuisine française avec une touche contemporaine.</p>
+                <p>Située au cœur de Paris, notre établissement a accueilli des personnalités du monde entier, toutes séduites par notre approche unique de la gastronomie.</p>
+                <p>Chaque plat est une œuvre d'art, chaque ingrédient soigneusement sélectionné, chaque service exécuté avec une précision inégalée.</p>
+                <a href="contact.html" class="btn" style="margin-top: 20px;">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Cuisine Étoilée</h3>
+                <p>Notre chef, titulaire de 3 étoiles Michelin, réinvente la gastronomie française avec créativité et respect des traditions.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-wine-glass-alt"></i>
+                </div>
+                <h3>Cave d'Exception</h3>
+                <p>Plus de 1 200 références soigneusement sélectionnées pour accompagner parfaitement chaque création culinaire.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>Ambiance Élégante</h3>
+                <p>Un décor raffiné mêlant design contemporain et éléments historiques pour une expérience sensorielle complète.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2023 Maison Le Sept. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
